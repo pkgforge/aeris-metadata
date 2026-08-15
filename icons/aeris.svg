@@ -1,0 +1,35 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E2634"/>
+      <stop offset="1" stop-color="#11151D"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="74" y1="34" x2="182" y2="98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BFDBFF"/>
+      <stop offset="1" stop-color="#7FB2FA"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="74" y1="104" x2="182" y2="168" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#79ACF7"/>
+      <stop offset="1" stop-color="#4C8AE8"/>
+    </linearGradient>
+    <linearGradient id="left" x1="74" y1="136" x2="128" y2="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B9BF8"/>
+      <stop offset="1" stop-color="#3B79DC"/>
+    </linearGradient>
+    <linearGradient id="right" x1="182" y1="136" x2="128" y2="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3C79D4"/>
+      <stop offset="1" stop-color="#24559F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#plate)"/>
+
+  <!-- the box, open -->
+  <path d="M74 136 128 168 128 224 74 192Z" fill="url(#left)"/>
+  <path d="M182 136 128 168 128 224 182 192Z" fill="url(#right)"/>
+  <path d="M128 104 182 136 128 168 74 136Z" fill="url(#rim)"/>
+  <path d="M128 116 168 136 128 156 88 136Z" fill="#141A24"/>
+
+  <!-- its lid, lifted off -->
+  <path d="M128 34 182 66 128 98 74 66Z" fill="url(#lid)"/>
+</svg>

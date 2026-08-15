@@ -1,0 +1,30 @@
+name: index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - icons/**
+      - index.toml
+      - tools/index.py
+  pull_request:
+    paths:
+      - icons/**
+      - index.toml
+  workflow_dispatch:
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The icons are served straight from the repository, so there is nothing
+      # to build or publish. All that has to hold is that index.toml says what
+      # icons/ actually holds.
+      - name: Check the index is current
+        run: python3 tools/index.py --check
