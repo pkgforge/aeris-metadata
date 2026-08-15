@@ -21,7 +21,7 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.14"
 
       # The icons are served straight from the repository, so there is nothing
       # to build or publish. All that has to hold is that index.toml says what
