@@ -1,0 +1,31 @@
+# The exceptions, and only the exceptions.
+#
+# A package is drawn with the icon named after it, so nothing here is needed
+# for the ordinary case, and a suffix saying how something was built is dropped
+# on its own: krita-bin finds krita without being told. Two things cannot be
+# said by a name alone.
+#
+# One package wanting another's icon, so the set carries it once rather than
+# twice. A development build is the same program:
+#
+#   "krita-devel" = "krita"
+#
+# And one name meaning different things to different managers. A manager's own
+# table wins over the shared one, and the shared one wins over the package's
+# own name, so only the manager that means something different needs saying:
+#
+#   [am]
+#   "some-editor" = "some-editor-nightly"
+
+[default]
+"firefox-beta"              = "firefox"
+"firefox-developer-edition" = "firefox-devedition"
+"firefox-esr"               = "firefox"
+"flow-browser"              = "flow"
+"gcap2026"                  = "gcap2025"
+"godot-mono"                = "godot"
+"irpf2026"                  = "irpf2025"
+"krita-devel"               = "krita"
+"nvim"                      = "neovim"
+"transmission-gtk"          = "transmission-qt"
+"zed-editor"                = "zed"

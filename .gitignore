@@ -1,0 +1,6 @@
+# Staged by tools/propose.py for review, taken by tools/accept.py.
+candidates/
+
+# Python leaves these behind when a tool is imported rather than run.
+__pycache__/
+*.pyc
